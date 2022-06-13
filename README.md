@@ -19,19 +19,20 @@ List library Python ini dapat kamu gunakan untuk data science
 THE RULE OF PYTHON
 
 1. Case Sensitive
+
 Syntax Python bersifat case sensitive, Ia akan membedakan antara huruf kecil dan huruf besar walaupun sebuah kata itu terlihat sama.
 Antara 'teksini' dan 'TeksIni' itu berbeda sma halnya 'judul' dengan 'Judul'.
 
 2. Case Style
+
 Snake Case digunakan pada:
 module_name, package_name, method_name, function_name, , global_var_name, 
 instance_var_name, function_parameter_name, local_var_name.
 
-
-## CamelCase digunakan Pada:
+CamelCase digunakan Pada:
 ClassName, ExceptionName
 
-## ALL CAPS digunakan Pada: 
+ALL CAPS digunakan Pada: 
 GLOBAL_CONSTANT_NAME
 
 3. Indentasi Sebagai Pembentuk Struktur yang sangat penting
