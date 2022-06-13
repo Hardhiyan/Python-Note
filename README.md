@@ -23,7 +23,7 @@ Syntax Python bersifat case sensitive, Ia akan membedakan antara huruf kecil dan
 Antara 'teksini' dan 'TeksIni' itu berbeda sma halnya 'judul' dengan 'Judul'.
 
 2. Case Style
-## Snake Case digunakan pada:
+Snake Case digunakan pada:
 module_name, package_name, method_name, function_name, , global_var_name, 
 instance_var_name, function_parameter_name, local_var_name.
 
