@@ -1,3 +1,6 @@
+from ast import Index
+
+
 PYTHON NOTE
 #Begin Here
 
@@ -311,6 +314,10 @@ Yang perlu diperhatikan adalah: bahwa indeks negatif tidak dimulai dari 0, akan 
  0  1  2  3  4 5  #Urutan Indeks
 -6 -5 -4 -3 -2-1  #Negative Indeks
 
+NOTE:
+  Positive Index = Indeks yang dimulai dari 0 atau dari 'Kiri' sedangkan
+  Negative Index = Indeks yang dimulai dari 'Kanan' atau dari -1
+
 # list kosong
 list_kosong = []
 
@@ -333,6 +340,11 @@ mengambil beberapa nilai dari anggota list dengan mendefinisikan indeks kiri dan
 
 a. parameter indeks sebelah kiri mendefinisikan awal indeks dari nilai yang akan ditampilkan.
 b. parameter indeks sebelah kanan mendefinisikan batas yang harus ditampilkan.
+
+NOTE: Lalu bagaimana Method dalam mengakses list jika parameternya ada 2 [::] atau list yang isinya sangat banyak? 
+Example: list[::1], perintah ini dibaca [start:stop:size]
+'mengambil elemen pada list dimulai dari data/nilai/elemen paling awal dan yang paling akhir dengan STEP SIZE nya adalah 1'
+titik pertama adalah awal, dan titik kedua adalah akhir dengan 1 adalah step size yang diinginkan.
 
 list_buah = ['Pisang', 'Nanas', 'Melon', 'Durian']
 
@@ -714,8 +726,9 @@ Hal ini berbeda dengan tipe data set mau pun tuple yang mana keduanya bersifat i
 Dictionary tidak bisa memiliki lebih dari satu 'key' yang sama karena ia bersifat unique. Sehingga jika ada dua buah 
 key yang sama, key yang didefinisikan terakhir akan menimpa nilai dari key yang didefinisikan lebih awal.
 
-#Key pada Dictionary bersifat UNIQUE
-#Key yang sama dan dimasukan terakhir kali akan menimpa key sebelumnya
+NOTE:
+Key pada Dictionary bersifat UNIQUE
+Key yang sama dan dimasukan terakhir kali akan menimpa key sebelumnya
 
 artikel = {
   "judul": "Menu Masakan Enak",
