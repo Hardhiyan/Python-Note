@@ -1,0 +1,195 @@
+from tokenize import single_quoted
+
+
+PYTHON NOTE
+#Begin Here
+
+Python adalah bahasa pemrograman yang ditujukan untuk general-purpose programming dan termasuk dalam kategori high-level programming language.
+
+Sebagai general-purpose programming language, Python digunakan untuk berbagai macam permasalahan seperti: pengembangan aplikasi web ataupun mobile, data science, dll.
+Python masuk ke dalam kategori high-level programming language dikarenakan bahasa pemrograman Python yang mudah untuk dibaca dan dituliskan oleh manusia.
+Bahasa  pemrograman  Python  diciptakan  oleh  Guido  van Rossum dan pertama kali diperkenalkan pada tahun 1991 sebagai sebuah proyek open-source. 
+Lisensi dari Python bersifat open-source dari Python, atau dengan kata lain setiap orang dapat mengembangkan program komputer dengan menggunakan bahasa pemrograman Python baik untuk tujuan komersil/non-komersil.
+
+Bahasa pemrograman Python adalah bahasa yang dieksekusi oleh sebuah interpreter. Interpreter tersebut bertugas untuk memparsing sintaks python, 
+dan kemudian mengkonversinya menjadi sebuah instruksi mesin satu persatu (maksudnya adalah mengeksekusi dari baris pertama ke baris selanjutnya 1 per 1)
+
+Apa kaitan Python dan Data Science?
+Python adalah bahasa yang ditujukan untuk general-purpose programming, jenis high-level programming language dan berlisensi open source”
+Karena tiga karakteristik itulah, banyak pengembang membuat library python ditujukan untuk data science dan tentunya memudahkan pengguna dalam melakukan analisis dan membuat model prediktif dalam data science.
+List library Python ini dapat kamu gunakan untuk data science
+
+THE RULE OF PYTHON
+
+1. Case Sensitive
+Syntax Python bersifat case sensitive, Ia akan membedakan antara huruf kecil dan huruf besar walaupun sebuah kata itu terlihat sama.
+Antara 'teksini' dan 'TeksIni' itu berbeda sma halnya 'judul' dengan 'Judul'.
+
+2. Case Style
+## Snake Case digunakan pada:
+module_name, package_name, method_name, function_name, , global_var_name, 
+instance_var_name, function_parameter_name, local_var_name.
+
+
+## CamelCase digunakan Pada:
+ClassName, ExceptionName
+
+## ALL CAPS digunakan Pada: 
+GLOBAL_CONSTANT_NAME
+
+3. Indentasi Sebagai Pembentuk Struktur yang sangat penting
+• Blok program adalah kumpulan dari beberapa statement yang digabungkan dalam satu blok.
+• Penulisan blok program harus ditambahkan indentasi (tab atau spasi 2x/4x).
+indentasi pada Python itu sangat krusial, sangat penting dan sangat-sangat harus dibiasakan memperhatikannya
+mengingat hal ini dapat mempengaruhi berjalannya syntax atau bahkan menghasilkan ERROR dan sulit dideteksi bagi yang belum terbiasa.
+• Jika 1 baris statement telah selesai maka proses 'Enter' atau ganti baris akan otomatis memberikan indentasi 
+Examples:
+
+for key in d2:
+    if key in d1:
+        d2[key] = d2[key] + d1[key]
+
+c = {**d1, **d2}
+print(c)
+
+LAGI, indentasi dalan Python statusnya MUTLAK dan tidak bisa salah seperti case sensitive.
+
+Error seperti ini biasanya akan terjadi jika:
+
+Kita melakukan copy-paste kode program dari internet lalu tidak memperhatikan Identasi yang seharusnya diterapkan
+Dan kita tidak menggunakan teks editor atau IDE yang baik
+
+4. Tipe Data String pada Python memiliki aturan tertentu juga
+Tipe Data String (Teks), harus diapit dengan tanda petik. Bisa menggunakan petik tunggal
+('...'), ganda ("..."), dan tiga ('''...''' atau """...""")
+
+5. Peng 'Indeks' an dalam Python dimulai dari 0
+Misalnya ada 5 tipe data
+
+ P  Y  T  H  O N
+ 0  1  2  3  4 5  #Urutan Indeks
+-6 -5 -4 -3 -2-1  #Negative Indeks
+
+NOTE:
+  Positive Index = Indeks yang dimulai dari 0 atau dari 'Kiri' sedangkan lalu ke kanan
+  Negative Index = Indeks yang dimulai dari 'Kanan' atau dari -1 lalu ke kiri
+
+6. Penulisan Antar statement/baris tidak diakhiri dengan 'titik koma' melainkan ganti baris '\n'/ENTER 
+lalu apa itu Statement pada Python? Statemen adalah sebuah pernyataan atau instruksi yang akan dieksekusi oleh mesin. 
+Interpreter python akan bertugas untuk menginterpretasikan setiap statemen menjadi perintah mesin yang sesuai
+
+Lalu, bagaimana cara interpreter python membedakan antar satu statemen dengan statemen lainnya? 
+yaitu dengan adanya proses ganti baris '\n'/ENTER. 
+
+Setiap pergantian baris, interpreter akan menganggap bahwa sebuah statemen telah sempurna.
+
+lalu kapan 'titik koma' bisa digunakan? ketika terdapat lebih dari 1 statement dalam 1 baris.
+
+Ex : a = 5; b = 8; c = a + b;
+
+Statement yang terlalu panjang dalam 1 baris akan sulit untuk dibaca, didebug dan dipahami oleh mesin.
+namun jika kita buat baris baru maka statement tsb akan error karena terputus dan tidak bisa dijalankan oleh interpreter.
+
+Ex : kondisi = 10 < 5  and 10 > 9 or 11 == 6 + 5 and 0 == 100 * 5 / (25 - 15)
+
+solusinya adalah menggunakan backslash (\)
+
+Sebagai contohnya adalah:
+
+kondisi = 10 < 5 \
+  and 10 > 9 \
+  or 11 == 6 + 5 \
+  and 0 == 100 * 5 / (25 - 15)
+
+Meskipun kode program di atas memiliki total 4 baris, tapi interpreter tetap menganggapnya sebagai satu statemen utuh.
+
+
+7. Tidak Ketat Terhadap Tipe Data
+Kita bisa memberi dan mengubah nilai apa pun dari tipe data apa pun ke dalam sebuah variabel.
+# nilai awal berupa integer
+a = 5
+# kita ubah menjadi string dan tidak error
+a = 'Jathy Hardhiyan'
+
+
+8. Tanda Petik dan Tanda Petik Dua
+Dalam bahasa pemrograman python, kita bisa mendefinisikan string dengan tanda petik satu ('') maupun tanda petik dua ("").
+
+nama = 'jathy'
+asal = "Indonesia"
+
+9. Penulisan Komentar
+Komentar satu baris ditulis dengan tanda (#) 
+Sedangkan komentar lebih dari satu baris ditulis dengan triple double_quote / single_quoted (""""..."""/'''...''')(tanda petik dua sebanyak 3x).
+
+NOTE: 
+Menambahkan '\n' sebelum Tipe data 'String' akan memberikan 'Enter' atau baris baru
+Immutable, artinya isi yang tidak bisa di ubah dan di hapus
+Replicate, data yang bersifat duplicate
+Unordered, artinya tidak terurut atau acak
+
+
+VARIABEL 
+Variabel di python merupakan tempat menyimpan data, Di python, kita bisa memasukkan tipe data apa saja ke dalam sebuah variabel, tanpa harus 
+mendefinisikan tipe datanya terlebih dahulu. hal ini berbeda dengan beberapa bahasa pemrograman lain yang mengharuskan kita 
+mendefinisikan tipe data terlebih dahulu sebelum menentukan sebuah variabel.
+
+Tipe data –sesuai namanya– ia adalah jenis dari suatu data. Setiap data memiliki nilai, dan setiap nilai memiliki jenis. 
+Ada data-data yang bertipe angka, ada pula yang bertipe huruf/karakter, ada juga yang bertipe benar/salah dan sebagainya.
+
+Berikut ini aturan-aturannya secara sederhana:
+
+1.Nama variabel hanya boleh diawali oleh huruf atau underscore.
+2.Nama variabel tidak boleh diawali oleh angka.
+3.Nama variabel hanya bisa terdiri dari karakter alpha-numeric dan underscore (A-z, 0-9, and _ ).
+4.Nama variabel bersifat case sensitive. Artinya variabel nama berbeda dengan Nama atau naMA.
+5.Nama Variabel tidak boleh ada character yang digunakan dalam programan Python seperti modulus (%), Operator Logika dsb.
+
+Aturan Assignment
+Aturan assignment atau aturan pemberian nilai terhadap variabel di dalam Python bisa selesai secara multiple mau pun secara single.
+
+Cara single adalah dengan memberikan satu nilai terhadap satu variabel dalam satu baris, 
+sedangkan cara multiple adalah dengan memberikan multiple nilai terhadap multiple variables dalam satu baris
+
+Ex:
+a, b, c = 1, 2, "Mantap"
+
+print('a:', a)
+print('b:', b)
+print('c:', c)
+
+# kita juga bisa memberikan satu nilai yang sama untuk
+# beberapa variabel
+
+d = e = f = 10
+
+print('d:', d)
+print('e:', e)
+print('f:', f)
+
+"""Tipe Data pada Python"""
+
+Text Types      : str
+Numeric Types   : int, float, complex
+Sequence Types  : list, tuple, range
+Mapping Types   : dict
+Set Types       : set, frozenset
+Boolean Types   : bool
+Binary Types    : bytes, bytearray, memoryview
+None Types      : NoneType
+
+Selain itu jika kita tidak tahu tipe apakah data yang kita akan masukkan, kita bisa mengecek,memeriksa atau mengetahui tipe data dari suatu variabel.
+Untuk melakukannya, kita bisa menggunakan fungsi type() bawaan python.
+
+a = 'Jakarta'
+b = 50
+
+print(type(a))
+print(type(b))
+
+<class 'str'>
+<class 'int'>
+
+
+
+

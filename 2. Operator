@@ -1,0 +1,104 @@
+'''Operator pada Python'''
+
+1. Artimatika pada Python
+
+Penjumlahan     +   1 + 3 = 4   Menjumlahkan nilai dari masing-masing operan atau bilangan
+Pengurangan     -   4 - 1 = 3   Mengurangi nilai operan di sebelah kiri menggunakan operan di sebelah kanan
+Perkalian       *   2 * 4 = 8   Mengalikan operan/bilangan
+Pembagian       /   10 / 5 = 2  Untuk membagi operan di sebelah kiri menggunakan operan di sebelah kanan
+Sisa Bagi       %   11 % 2 = 1  Mendapatkan sisa pembagian dari operan di sebelah kiri operator ketika dibagi oleh operan di sebelah kanan
+Pangkat         **  8 ** 2 = 64 Memangkatkan operan disebelah kiri operator dengan operan di sebelah kanan operator
+Pembagian Bulat //  10 // 3 = 3 Sama seperti pembagian. Hanya saja angka dibelakang koma dihilangkan
+
+
+2. Perbandingan pada Python
+"""Operator perbandingan/relasi adalah operator yang bertugas untuk membandingkan antar dua Operand. Jika hasil perbandingan benar, 
+maka akan menghasilkan nilai True, dan sebaliknya jika salah maka akan menghasilkan nilai False"""
+
+Sama dengan                     ==  1 == 1  bernilai True Jika masing-masing operan memiliki nilai yang sama, maka kondisi bernilai benar atau True.
+Tidak sama dengan               !=  2 != 2  bernilai False Akan menghasilkan nilai kebalikan dari kondisi sebenarnya.
+Tidak sama dengan               <>  2 <> 2  bernilai False Akan menghasilkan nilai kebalikan dari kondisi sebenarnya.
+Lebih besar dari                >   5 > 3   bernilai True Jika nilai operan kiri lebih besar dari nilai operan kanan, maka kondisi menjadi benar.
+Lebih kecil dari                <   5 < 3   bernilai True Jika nilai operan kiri lebih kecil dari nilai operan kanan, maka kondisi menjadi benar.
+Lebih besar atau sama dengan    >=  5 >= 3  bernilai True Jika nilai operan kiri lebih besar dari nilai operan kanan, atau sama, maka kondisi menjadi benar.
+Lebih kecil atau sama dengan    <=  5 <= 3  bernilai True Jika nilai operan kiri lebih kecil dari nilai operan kanan, atau sama, maka kondisi menjadi benar
+
+3. Penugasan pada Python
+"""Operator Assignment adalah operator untuk memasukkan suatu nilai/tugas ke dalam suatu variabel. Dalam Bahasa Pemrograman Python, 
+Operator Assignment menggunakan tanda sama dengan (=). Misal nilai = 29, artinya nilai telah diberi tugas untuk menyimpan angka 29."""
+
+Sama dengan/Pengisian       =       a = 1   Memberikan nilai di kanan ke dalam variabel yang berada di sebelah kiri.
+Tambah sama dengan          +=      a += 2  Memberikan nilai variabel dengan nilai variabel itu sendiri ditambah dengan nilai di sebelah kanan.
+Kurang sama dengan          -=      a -= 2  Memberikan nilai variabel dengan nilai variabel itu sendiri dikurangi dengan nilai di sebelah kanan.
+Kali sama dengan            *=      a *= 2  Memberikan nilai variabel dengan nilai variabel itu sendiri dikali dengan nilai di sebelah kanan.
+Bagi sama dengan            /=      a /= 4  Memberikan nilai variabel dengan nilai variabel itu sendiri dibagi dengan nilai di sebelah kanan.
+Sisa bagi sama dengan       %=      a %= 3  Memberikan nilai variabel dengan nilai variabel itu sendiri dibagi dengan nilai di sebelah kanan. Yang diambil nantinya adalah sisa baginya.
+Pangkat sama dengan         **=     a **= 3 Memberikan nilai variabel dengan nilai variabel itu sendiri dipangkatkan dengan nilai di sebelah kanan.
+Pembagian bulat sama dengan //=     a //= 3 Membagi bulat operan sebelah kiri operator dengan operan sebelah kanan operator kemudian hasilnya diisikan ke operan sebelah kiri.
+&=                                  x &= 3  sama dengan x = x & 3   
+|=                                  x |= 3  sama dengan x = x | 3   
+^=                                  x ^= 3  sama dengan x = x ^ 3   
+>>=                                 x >>= 3 sama dengan x = x >> 3  
+<<=                                 x <<= 3 sama dengan x = x << 3
+
+4. Logika pada Python
+"""Operator Logika digunakan untuk membandingkan dua Operand atau dua nilai yang bertipe BOOLEAN dan akan menghasilkan nilai Boolean yaitu TRUE atau FALSE.
+Operator logika adalah operator yang sangat penting. Operator ini sangat berkaitan erat dengan operator perbandingan.
+Dan kedua-duanya juga mengembalikan nilai dengan tipe data yang sama yaitu BOOLEAN."""
+
+and                                 x < 5 and  x < 10       Mengembalikan True jika dua statement sama-sama benar    
+or                                  x < 5 or x < 4          Mengembalikan True jika salah satu statement bernilai benar
+not                                 not(x < 5 and x < 10)   Menegasikan hasil. True menjadi False dan sebaliknya
+
+5. Identitas pada Python
+"""Operator ini didefinisikan dengan is dan is not. Tugasnya adalah untuk mengetahui apakah dua buah variabel merupakan objek yang sama atau memiliki nilai yang sama atau tidak. 
+Jika sama akan menghasilkan nilai TRUE dan sebaliknya, jika salah akan menghasilkan nilai FALSE.
+Karena tidak semua nilai yang sama memiliki tempat / posisi yang sama di dalam memori."""
+
+is                                  x is y          Menghasilkan nilai TRUE jika kedua nilai operand memiliki identitas yang sama.
+is not                              x is not y      Menghasilkan nilai FALSE jika kedua nilai operand memiliki identitas yang sama.
+
+6. Keanggotaan pada Python
+"""Operator Keanggotaan hanya bisa digunakan pada variable jenis SEQUENCE yang dapat menampung banyak nilai. 
+Fungsi dari operator ini adalah untuk memeriksa apakah suatu nilai merupakan salah satu anggota dari variabel berjenis sequence atau tidak. 
+Kemudian akan menghasilkan nilai TRUE atau FALSE."""
+
+in                                  x in y          Menghasilkan nilai TRUE jika nilai yang ditentukan berada dalam objek tertentu 
+not in                              x not in y      Menghasilkan nilai TRUE jika nilai yang ditentukan tidak ada dalam objek tertentu
+
+7. Bitwise pada Python
+"""Jenis operator terakhir ini hampir sama seperti Operator Logika, akan tetapi operator ini melakukan operasi berdasarkan bilangan BIT/BINARY. 
+Bilangan biner sendiri merupakan jenis bilangan yang hanya terdiri dari dua jenis angka, yakni 0 dan 1. 
+Jika nilai asal yang dipakai bukan bilangan biner, akan dikonversi secara otomatis oleh Python menjadi bilangan biner."""
+
+&   Bitwise AND                     Mengembalikan bit 1 jika dua bit bernilai 1
+|   Bitwise OR                      Mengembalikan bit 1 jika salah satu bit bernilai 1
+ ^  Bitwise XOR                     Mengembalikan bit 1 jika hanya satu bit saja yang bernilai 1
+~   Bitwise NOT                     Membalikkan semua bit
+<<  Bitwise Zero fill left shift    Menggeser bit ke kiri dengan mendorong digit 0 dan membiarkan bit paling kiri terlepas
+>>  Bitwise Signed right shift      Menggeser bit ke kanan dengan mendorong salinan digit sebelah kiri dan membiarkan digit sebalah kanan terlepas
+
+
+
+-- Urutan Operasi Artimatika
+
+• Dari dulu, operasi perhitungan selalu dimulai dari tanda kurung (Parenthese), pangkat (Exponensial), perkalian
+(Multiplication) dan pembagian (Division), sampai penjumlahan (Addition) dan pengurangan (Subtraction). Agar
+lebih mudah mengingatnya, kita bisa persingkat menjadi PEMDAS.
+• Jika kedudukannya sama, maka dimulai dari yang paling kiri (yang paling dulu dikomputasi.
+
+--Lalu secara keseluruhan Prioritas Eksekusi OPERATOR pada Python adalah:
+
+**                                  Aritmatika
+~, +, -                             Bitwise
+*, /, %, //                         Aritmatika
++, -                                Aritmatika
+>>, <<                              Bitwise
+&                                   Bitwise
+^, |                                Bitwise
+<=, <, >, >=                        Perbandingan
+<> , ==, !=                         Perbandingan
+=, %=, /=, //=, -=, +=, *=, **=     Penugasan
+is, is not                          Identitas
+in, not in  Membership              (Keanggotaan)
+not, or, and                        Logika
