@@ -35,11 +35,11 @@ Bagi sama dengan            /=      a /= 4  Memberikan nilai variabel dengan nil
 Sisa bagi sama dengan       %=      a %= 3  Memberikan nilai variabel dengan nilai variabel itu sendiri dibagi dengan nilai di sebelah kanan. Yang diambil nantinya adalah sisa baginya.
 Pangkat sama dengan         **=     a **= 3 Memberikan nilai variabel dengan nilai variabel itu sendiri dipangkatkan dengan nilai di sebelah kanan.
 Pembagian bulat sama dengan //=     a //= 3 Membagi bulat operan sebelah kiri operator dengan operan sebelah kanan operator kemudian hasilnya diisikan ke operan sebelah kiri.
-&=                                  x &= 3  sama dengan x = x & 3   
-|=                                  x |= 3  sama dengan x = x | 3   
-^=                                  x ^= 3  sama dengan x = x ^ 3   
->>=                                 x >>= 3 sama dengan x = x >> 3  
-<<=                                 x <<= 3 sama dengan x = x << 3
+Bitwise AND sama dengan     &=      x &= 3  sama dengan x = x & 3   
+Bitwise OR sama dengan      |=      x |= 3  sama dengan x = x | 3   
+Bitwise XOR sama dengan     ^=      x ^= 3  sama dengan x = x ^ 3   
+Bitwise SHIFT RIGHT sama dengan     >>=     x >>= 3 sama dengan x = x >> 3  
+Bitwise SHIFT LEFT sama dengan      <<=     x <<= 3 sama dengan x = x << 3
 
 4. Logika pada Python
 """Operator Logika digunakan untuk membandingkan dua Operand atau dua nilai yang bertipe BOOLEAN dan akan menghasilkan nilai Boolean yaitu TRUE atau FALSE.
