@@ -47,7 +47,7 @@ mengambil beberapa nilai dari anggota list dengan mendefinisikan indeks kiri dan
 a. parameter indeks sebelah kiri mendefinisikan awal indeks dari nilai yang akan ditampilkan.
 b. parameter indeks sebelah kanan mendefinisikan batas yang harus ditampilkan.
 
-NOTE: Lalu bagaimana Method dalam mengakses list jika parameternya ada 2 [::] atau list yang isinya sangat banyak? 
+NOTE: Lalu bagaimana Metode dalam mengakses list jika parameternya ada 2 [::] atau list yang isinya sangat banyak? 
 Example: list[::1], perintah ini dibaca [start:stop:size]
 'mengambil elemen pada list dimulai dari data/nilai/elemen paling awal dan yang paling akhir dengan STEP SIZE nya adalah 1'
 titik pertama adalah awal, dan titik kedua adalah akhir dengan 1 adalah step size yang diinginkan.
